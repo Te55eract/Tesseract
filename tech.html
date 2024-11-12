@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        button {
+            display: block;
+            margin: 20px auto;
+            color: white;
+            background-color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: xx-large;
+        }
+        
+        h2 {
+            text-align: center;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: xx-large;
+        }
+        
+        body {
+            background-color: black;
+        }
+    </style>
+    <title>Button Page</title>
+</head>
+<body>
+    <h1>BUTTON PAGE</h1>
+
+    <!-- Counter display -->
+    <h2 id="counter">0</h2>
+    
+    <!-- Button that increments the counter -->
+    <button type="button" onclick="incrementCounter()">BUTTON</button>
+
+    <script>
+        // JavaScript function to increment the counter
+        let count = 0;
+        function incrementCounter() {
+            count++;
+            document.getElementById("counter").textContent = count;
+        }
+    </script>
+</body>
+</html>
